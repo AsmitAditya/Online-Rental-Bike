@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div id="logo">Logo</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="listing.html">Listing</a>
+    <a href="About_us.html">About Us</a>
+    <a href="#login" id="loginBtn" onclick="openLoginPopup()">Log In</a>
+    
+  </nav>
+</header>
+
+<section class="banner">
+  <div class="overlay">
+    <h2>Online Motorcycle Rental System</h2>
+  </div>
+</section>
+
+<section class="search-bar">
+  <div class="search-container">
+    
+    <input type="text" id="location" placeholder="Enter location">
+    <button onclick="search()">Search</button>
+  </div>
+</section>
+
+
+<section class="benefits-section">
+  <h2>Benefits of renting with us</h2>
+  <div class="benefit">
+    <img src="ZeroBrokerage.png" alt="Benefit 1">
+    <p>Zero Brokerage Options</p>
+  </div>
+  <div class="benefit">
+    <img src="Affordable_rent.png" alt="Benefafit 2">
+    <p>Affordable Rent</p>
+  </div>
+  <div class="benefit">
+    <img src="Instant.png" alt="Benefit 3">
+    <p>Instant Processing</p>
+  </div>
+</section>
+
+
+
+<section class="design-for-you-section">
+  <h2>Design for You Only</h2>
+  <div class="category">
+    <img src="10897758.jpg" alt="Room Image">
+    <h3>Classic Bike</h3>
+    <p>Discover comfortable Bike tailored to your needs Perfect young professionals.</p>
+    <p>Available 15</p>
+    <p>Price: $300 - $700/Day</p>
+  </div>
+  <div class="category">
+    <img src="157-1579903_cbr1000rr-repsol-2017-hd-wallpapers-wallpaper-cave-honda.jpg" alt="Hostel Image">
+    <h3>Sports Bike</h3>
+    <p>Explore our range of sports bike with modern amenities. Perfect for students.</p>
+    <p>Available: 30</p>
+    <p>Price: $500 - $1000/month</p>
+  </div>
+  <div class="category">
+    <img src="pngtree-vintage-electric-or-classic-blue-retro-scooter-against-white-and-yellow-image_3702543.jpg" alt="PG Image">
+    <h3>comfortable</h3>
+    <p>Experience comfortable and accommodations. Budget-friendly and convenient.</p>
+    <p>Available: 10</p>
+    <p>Price: $200 - $500/month</p>
+  </div>
+</section>
+
+
+
+<section class="counts-section">
+  <div class="count-box" id="customerCountBox">
+    <h3 id="customerCount">0</h3>
+    <p>Customers</p>
+  </div>
+  <div class="count-box" id="accommodationCountBox">
+    <h3 id="accommodationCount">0</h3>
+    <p>Accommodations</p>
+  </div>
+  <div class="count-box" id="citiesCountBox">
+    <h3 id="citiesCount">0</h3>
+    <p>Cities in India</p>
+  </div>
+  <div class="count-box" id="savingsCountBox">
+    <h3 id="savingsCount">₹0</h3>
+    <p>Savings made on Brokerage</p>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">Logo</div>
+    <div class="company-info">
+      <p>Search Properties, services, and items for rent on a single site.</p>
+    </div>
+    <div class="social-media">
+      <h3>Connect with us</h3>
+      <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+      <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Login Popup -->
+<div id="loginPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closeLoginPopup()">&times;</span>
+    <h2>Login</h2>
+    <input type="text" placeholder="Mobile Number" id="mobileNumberInput" oninput="handleMobileNumberInput()">
+    <button id="sendOtpBtn" onclick="sendOtp()" disabled>Send OTP</button>
+    <input type="text" placeholder="OTP" id="otpInput" disabled>
+    <button id="loginBtn" onclick="login()" disabled>Login</button>
+    <p>Don't have an account? <a href="#" onclick="showRegistration()">Register</a></p>
+  </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">&#8593;</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

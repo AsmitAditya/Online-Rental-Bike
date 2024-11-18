@@ -1,0 +1,608 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  nav {
+    display: flex;
+  }
+  h2{
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  #loginBtn {
+    cursor: pointer;
+  }
+  
+  /* Add this style for the login popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Add this style for the registration popup */
+  #registrationPopup {
+    display: none;
+  }
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  #logo {
+    cursor: pointer;
+  }
+  
+  section.banner {
+    height: 300px; /* Adjust the height as needed */
+    background: url(wp9121934.webp) center/cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section.search-bar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 5px;
+    width: 45%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  section.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  
+  .category-card {
+    width: 30%;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height:100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .category-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .category-card p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .listing-count {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .company-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .company-info p {
+    margin-bottom: 10px;
+  }
+  
+  .listings {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .listings h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .listings ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listings li {
+    margin-bottom: 5px;
+  }
+  
+  .listings a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .listings a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  section {
+   
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+/* Add this style for the content cards */
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px; /* Initial width, you can adjust as needed */
+  transition: width 0.3s ease; /* Transition for smooth resizing */
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating span {
+  font-size: 24px;
+  color: gold;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.wishlist-btn {
+  background-color: transparent;
+  color: #333;
+}
+
+.wishlist-btn:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* Add this style for the content cards */
+.card {
+  display: flex;
+  flex-direction: column; /* Set the direction to column */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px; /* Initial width, you can adjust as needed */
+  transition: width 0.3s ease; /* Transition for smooth resizing */
+}
+
+.card-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating span {
+  font-size: 24px;
+  color: gold;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.wishlist-btn {
+  background-color: transparent;
+  color: #333;
+}
+
+.wishlist-btn:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.about-us {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+/* Add this style for the Scroll to Top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+
+
+/* Add this style for the benefits section */
+.benefits-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefits-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+}
+
+.benefit {
+  width: 30%; /* Adjust the width based on your preference */
+  margin-bottom: 40px;
+}
+
+.benefit img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.benefit p {
+  margin-top: 10px;
+  color: #555;
+}
+
+
+/* Add this style for the "Design for You Only" section */
+.design-for-you-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.design-for-you-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+}
+
+.category {
+  width: 30%; /* Adjust the width based on your preference */
+  margin-bottom: 40px;
+}
+
+.category img {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.category h3 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.category p {
+  margin-top: 10px;
+  color: #555;
+}
+
+
+/* Add this style for the Counts section */
+.counts-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.count-box {
+  width: 30%; /* Adjust the width based on your preference */
+  margin-bottom: 40px;
+}
+
+.count-box h3 {
+  font-size: 2em;
+  color: #333;
+}
+
+.count-box p {
+  margin-top: 10px;
+  color: #555;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.property-form {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
